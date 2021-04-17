@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% block title %}HOME{% endblock %}
+
+    {% block content %}
+    <div class="container">
+      <div class="row">
+        <div class="bg-light justify-content-center align-self-center text-center col-lg-7 mb-lg-0"> 
+            <div class="mx-auto my-5 mb-lg-0">
+                <h3>Hello there!</h3>
+                <p class="lead mb-0">This is the HOME page of the ONLINE QUIZ APP.
+                  <br>
+                  This quiz app is created by <strong>Shreya, Soniya, Vaibhavi & Vikas</strong>.
+                  <br>
+                  Volla 
+                </p>
+                {% if not current_user.is_authenticated %}
+                <div class="row">
+                  <div class="bg-light justify-content-center align-self-center text-center col-lg-6 mb-lg-0">
+                    <div class="card border-primary card-signin mx-auto mb-lg-0 my-5">
+                      <div class="mx-auto my-2 mb-lg-0">
+                        <p class="lead mb-1"><strong>Login</strong> to access numerous quizes!
+                        </p>
+                      </div>
+                      <div class="card-footer">
+                        <a class="btn btn-outline-primary" href="{{ url_for('auth.login')}}">Login</a>
+                      </div> 
+                    </div>
+                      
+                  </div>
+                  <div class="bg-light justify-content-center align-self-center text-center col-lg-6 mb-lg-0">
+                    <div class="card border-primary card-signin mx-auto mb-lg-0 my-5">
+                      <div class="mx-auto my-2 mb-lg-0">
+                        <p class="lead mb-1"><strong>Register</strong> in order to login! </p>
+                      </div>
+                      <div class="card-footer">
+                        <a class="btn btn-outline-primary" href="{{ url_for('auth.register')}}">Register</a>
+                      </div>
+                    </div>  
+                  </div>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+
+        <div class="col-lg-5 mb-lg-0">
+          <div class="card card-signin mx-auto mb-lg-0 my-5">
+            <div class="card-body align-self-center">
+              <h5 class="card-title text-center">HOME PAGE</h5>
+                <div class="testimonial-item mx-auto mb-5">
+                  <img class="img-fluid rounded-circle mb-3" src="{{url_for('static', filename='undraw_profile_1.svg')}}" alt="">
+                  <h5 class="text-center">@creater</h5>
+                  <p class="font-weight-light text-center mb-3">SHREYA MISHRA<br>SONIYA KADAM<br>VAIBHAVI PATIL<br>VIKAS MISHRA</p>
+                </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    {% endblock %}
+  

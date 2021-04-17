@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block title %}Quiziz{% endblock %}
+
+
+    {% block content %}
+    {% if current_user.is_authenticated %}
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 mb-lg-0">
+          <div class="card card-signin mx-auto mb-lg-0 my-5">
+            <div class="card-body">
+            
+              <h2>Quiz - {{t}}</h2>
+              <br my-5>
+                <form action='/quiz_answers' method='POST'>
+                    <ol>
+                        {% for i in q %}
+                            <li> {{i}} </li>
+                            {% for j in o[i] %}
+                                <input required='true' value='{{j}}' name='{{i}}' type='radio'/>{{j}}
+                                <br>
+                            {% endfor %}
+                            <br>
+                        {% endfor %}
+                    </ol>
+                    <button type="submit" name='subjectname' value='{{t}}'  id="quizSubmit" class="btn btn-success">Submit</button>
+                    <!--<input type="submit" value="submit" />-->
+                </form>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    {% endif %}
+    {% endblock %}
+ 
+ 

@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% block title %}SOLVE{% endblock %}
+
+    {% block content %}
+    {% if current_user.is_authenticated %}
+    <div class="container">
+      
+        {% with messages = get_flashed_messages() %}
+          {% if messages %}
+              <br>
+              <div class="text-center notification text-danger mb-3">
+                  {{ messages[0] }} 
+              </div>
+              <hr>
+          {% endif %}
+        {% endwith %}
+
+      <div class="row">
+        <div class="col-sm-3  mx-auto mb-lg-0 my-5 card">
+                <img class="card-img-top" src="{{url_for('static', filename='edc.jpg')}}" alt="Card image" >
+                <div class="card-body">
+                  <h4 class="card-title">ED & C - II</h4>
+                <form action='/quiz' method="POST">
+                  <button type="submit" name="choice" value="edc" class="btn btn-primary">Solve EDC</button>
+                </form>   
+                 
+                </div>
+        </div>
+        
+        <div class="col-sm-3  mx-auto mb-lg-0 my-5 card">
+            
+                <img class="card-img-top" src="{{url_for('static', filename='ss.jpg')}}" alt="Card image" style="width:100%">
+                <div class="card-body">
+                  <h4 class="card-title">S & S</h4>
+                <form action='/quiz' method="POST">
+                  <button type="submit" name="choice" value="ss" class="btn btn-primary">Solve SS</button>
+                </form>  
+                </div>
+            
+        </div>
+    
+        <div class="col-sm-3  mx-auto mb-lg-0 my-5 card">
+                <img class="card-img-top" src="{{url_for('static', filename='python.png')}}" alt="Card image" style="width:100%">
+                <div class="card-body">
+                  <h4 class="card-title">PYTHON</h4>
+                <form action='/quiz' method="POST">
+                  <button type="submit" name="choice" value="python" class="btn btn-primary">Solve PYTHON</button>
+                </form>  
+                 
+                </div>
+        </div>
+      </div>
+    </div>
+    {% endif %}
+    {% endblock %}

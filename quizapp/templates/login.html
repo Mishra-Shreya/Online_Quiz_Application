@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+{% block title %}HOME - LOGIN{% endblock %}
+
+
+    {% block content %}
+    <div class="container">
+      <div class="row">
+        <div class="bg-light justify-content-center align-self-center text-center col-lg-7 mb-lg-0"> 
+            <div class="mx-auto my-5 mb-lg-0">
+                <h3>Hello there!</h3>
+                <p class="lead mb-0">You can login with your credentials here!</p>
+            </div>
+        </div>
+
+        <div class="col-lg-5 mb-lg-0">
+          <div class="card card-signin mx-auto mb-lg-0 my-5">
+            <div class="card-body">
+              <h5 class="card-title text-center">Login</h5>
+
+              {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                    <div class="notification text-danger mb-3">
+                        {{ messages[0] }} 
+                    </div>
+                {% endif %}
+              {% endwith %}
+
+              <form class="form-signin" method="POST" action="/login">
+                
+                <!--<div class="form-label-group">
+                  <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+                  <label for="inputEmail">Create User id</label>
+                  <small id="inputEmail" class="text-muted">
+                    Must end with @quizplayer
+                  </small>
+                </div>-->
+
+                <div class="input-group input-group-lg mb-3">
+                    <input type="text" class="form-control form-control-border"  placeholder="User id" id="userid" name="email" required autofocus>
+                    <div class="input-group-append">
+                      <span class="input-group-text">@quizplayer</span>
+                    </div>
+                </div>
+
+                  <div class="form-label-group">
+                  <input type="password" id="inputPassword" class="form-control" placeholder="Password" name="password" required>
+                  <label for="inputPassword">Password</label>
+                  </div>
+
+                  <div class="custom-control custom-checkbox mb-3">
+                    <input type="checkbox" class="custom-control-input" id="notrobot" name="notrobot" required>
+                    <label class="custom-control-label" for="notrobot">I am NOT a ROBOT</label>
+                  </div>
+
+                  <div class="custom-control custom-checkbox mb-3">
+                    <input type="checkbox" class="custom-control-input" id="remember" name="remember">
+                    <label class="custom-control-label" for="remember">Remember Me</label>
+                  </div>
+
+                  <button class="btn btn-lg btn-primary btn-block text-uppercase mb-3" type="submit">Login</button>
+                  
+                  <div class="testimonial-item mx-auto mb-1 mb-lg-0">
+                    <a class="font-weight-light" href="{{ url_for('auth.register')}}">Don't have an account? Register now</p>
+                  </div>
+
+              </form>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    {% endblock %}
+  
