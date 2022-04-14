@@ -14,15 +14,20 @@ _This project was made as a part of school-esd-activity_
 ### ScreenShots: 
 #### Home Page:
 <img width="960" alt="image" src="https://user-images.githubusercontent.com/69296480/163383432-b23c6547-7594-48df-bbfb-52d86917878f.png">
+
 #### Registration:
 <img width="960" alt="image" src="https://user-images.githubusercontent.com/69296480/163383521-86f11e0d-9c6d-4099-8b31-7c33c17a0572.png">
+
 #### Login:
 <img width="960" alt="image" src="https://user-images.githubusercontent.com/69296480/163383576-d4380ea3-cb30-468f-8982-2b88ec6a8c75.png">
+
 #### Dashboard:
 <img width="960" alt="image" src="https://user-images.githubusercontent.com/69296480/163383603-420019de-a8bf-44e9-b645-3d45617a7cdc.png">
+
 #### Quiz:
 <img width="960" alt="image" src="https://user-images.githubusercontent.com/69296480/163383780-a95509c3-07c2-48ea-a1d1-ea84956358a2.png">
 <img width="960" alt="image" src="https://user-images.githubusercontent.com/69296480/163383904-e1797574-e913-4c7b-bb91-b54b134a93bf.png">
+
 #### Result:
 <img width="960" alt="image" src="https://user-images.githubusercontent.com/69296480/163383959-68ed5c2f-dbce-40ea-a529-46203cbb3238.png">
 
@@ -44,9 +49,8 @@ _This project was made as a part of school-esd-activity_
 <img width="960" alt="image" src="https://user-images.githubusercontent.com/69296480/163385343-55d16d7f-3bfa-417b-88ee-590c67cae0d2.png">
 <img width="960" alt="image" src="https://user-images.githubusercontent.com/69296480/163385374-0f0ab7d6-a6ad-4346-8f29-922c6e2cb4fb.png">
 
-#### Autherization Check - _If someone tries to access the quiz without logging in_:
+#### Autherization Check - _If someone tries to access the quiz without logging in --> They are redirected to the login page_:
 <img width="705" alt="image" src="https://user-images.githubusercontent.com/69296480/163385634-8d22c66e-2524-44aa-92b2-546a0393e7ee.png">
-_They are redirected to the login page_
 <img width="960" alt="image" src="https://user-images.githubusercontent.com/69296480/163385675-34ef3ee5-91ae-45bd-865b-604a98ec71d7.png">
 
 
