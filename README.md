@@ -2,14 +2,13 @@
 
 The project is Live @ http://shreyasanjaymishra.pythonanywhere.com/
 
-### Description:
+## Description:
 Quizzen is developed in Python based on Flask Web Framework.
 This project is a prototype of an online quiz application - a basic framework for an ideal web-based quiz application.
 
 _This project was made as a part of school-esd-activity_
 
 **Technology Stack**: Python, Flask, HTML/CSS, Bootstrap
-###
 
 ## Installation and Setup:
 
@@ -57,7 +56,7 @@ Open "http://127.0.0.1:5000/" on your web browser.
 The  Online_Quiz_Application should be running!
 
 
-### ScreenShots of deployed app: 
+## ScreenShots of deployed app: 
 #### Home Page:
 <img width="960" alt="image" src="https://user-images.githubusercontent.com/69296480/163383432-b23c6547-7594-48df-bbfb-52d86917878f.png">
 
