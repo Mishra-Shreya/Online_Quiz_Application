@@ -11,6 +11,46 @@ _This project was made as a part of school-esd-activity_
 **Technology Stack**: Python, Flask, HTML/CSS, Bootstrap
 ###
 
+## Installation
+
+**Step 1:**
+
+Download or clone this repo by using the link below:
+
+```
+https://github.com/Mishra-Shreya/Online_Quiz_Application.git
+```
+
+**Step 2:**
+
+Go to project root and execute the below command: 
+
+```
+cd flask_app 
+```
+
+**Step 3:**
+
+Setup virtual env: 
+
+```
+python3.9 -m venv venv
+```
+```
+source venv/Scripts/activate
+```
+```
+pip install -r requirements.txt
+```
+
+**Step 4:**
+
+Run Flask App: 
+
+```
+flask run
+```
+
 ### ScreenShots: 
 #### Home Page:
 <img width="960" alt="image" src="https://user-images.githubusercontent.com/69296480/163383432-b23c6547-7594-48df-bbfb-52d86917878f.png">
